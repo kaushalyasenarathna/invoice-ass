@@ -29,28 +29,29 @@ if (isset($_POST['submit'])) {
  ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>customer details</title>
- <!-- Boostrap Link ******************************************************************************************************************** -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-<!-- Boostrap link ******************************************************************************************************************** -->
-  
- 
- <style type="text/css">
-   .wrapper{
-
-    margin-right:20rem;
-   }
-   .span8{
-margin-left: 20rem;
-
-   }
- </style>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
+	<meta name="author" content="AdminKit">
+	<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+	<title>AdminKit Demo - Bootstrap 5 Admin Template</title>
+	<link href="../main/css/app.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-<body>
+<body>	 
 
+	<div class="wrapper"> 
+	<?php include '../main/nav.php'; ?>  
+		<div class="main">
+		<?php include '../main/header.php'; ?>  
+			<main class="content">
+				<div class="container-fluid p-0">
+			 
 <div id="content-page" class="content-page">
         <div class="container-fluid">
             <div class="row">
@@ -129,5 +130,20 @@ if ($query->rowCount() > 0) {
  
  	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+				</div>
+			</main>	
+		</div>
+	</div>
+
+	<script src="../main/js/app.js"></script>
+
+ 
+ 
+
 </body>
+
 </html>
+
+
+
+ 

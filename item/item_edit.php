@@ -43,14 +43,18 @@ if (isset($_REQUEST['btn_update'])) {
 ?>
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0">
-    <title>PHP PDO File Upload Using MySQL:onlyxscript.blogspot.in</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
+	<meta name="author" content="AdminKit">
+	<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+	<title>AdminKit Demo - Bootstrap 5 Admin Template</title>
+	<link href="../main/css/app.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <style type="text/css">
 form {
@@ -61,10 +65,13 @@ form {
 </style>
 
 <body>
-    <div class="wrapper">
-        <div class="container">
-            <div class="col-lg-12">
-                <?php
+<div class="wrapper"> 
+	<?php include '../main/nav.php'; ?>  
+		<div class="main">
+	
+			<main class="content">
+         
+            <?php
     if (isset($errorMsg)) {
         ?>
                 <div class="alert alert-danger">
@@ -164,9 +171,14 @@ if ($query->rowCount() > 0) {
                 </div>
             </div>
             </form>
-        </div>
-    </div>
-    </div>
+  
+			</main>	
+		</div>
+	</div>
+
+	<script src="../main/js/app.js"></script>
+
+            
 </body>
 
-</html>
+</html>   
